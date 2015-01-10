@@ -30,7 +30,18 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-controller="SelectorController">
+    <div class="container-fluid">
+
+      <div id="selector-container" class="row" ng-controller="SelectorController">
+
+      </div>
+
+      <div id="translation-container" class="row" ng-controller="TranslationController">
+
+      </div>
+
+      <div id="warning-container" class="row"></div>
+
     </div>
 
     <!-- build:js(.) scripts/oldieshim.js -->
@@ -65,7 +76,8 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/selector.js"></script>
+        <script src="scripts/controllers/translation.js"></script>
         <script src="scripts/services/translation.js"></script>
         <!-- endbuild -->
 </body>

@@ -9,9 +9,11 @@
  */
 angular.module('howToCussInApp')
   .controller('SelectorController', function ($scope, Translation, $log) {
+    $scope.languages = [];
+
     Translation
       .get()
       .then(function(response) {
-        $log.info(response.data);
+        $scope.languages = Object.keys(response.data);
       });
   });
