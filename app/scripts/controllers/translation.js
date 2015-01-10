@@ -2,11 +2,11 @@
 
 angular.module('howToCussInApp')
   .controller('TranslationController', function($scope, Translation) {
-    $scope.language_data = [];
+    $scope.languageData = [];
 
     Translation
       .get()
       .then(function(response) {
-        $scope.language_data = response.data;
+        $scope.languageData = response.data;
       });
   });

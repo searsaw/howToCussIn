@@ -8,7 +8,7 @@
  * Controller of the howToCussInApp
  */
 angular.module('howToCussInApp')
-  .controller('SelectorController', function ($scope, Translation, $log) {
+  .controller('SelectorController', function ($scope, Translation) {
     $scope.languages = [];
 
     Translation

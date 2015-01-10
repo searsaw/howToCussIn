@@ -12,7 +12,7 @@ angular.module('howToCussInApp')
       .then(function(data) {
         deferred.resolve(data);
       }, function(error) {
-        deferred.error('Can\'t find the file.');
+        deferred.error(error);
       });
     translationData = deferred.promise;
 
