@@ -8,10 +8,10 @@
  * Controller of the howToCussInApp
  */
 angular.module('howToCussInApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('SelectorController', function ($scope, Translation, $log) {
+    Translation
+      .get()
+      .then(function(response) {
+        $log.info(response.data);
+      });
   });
