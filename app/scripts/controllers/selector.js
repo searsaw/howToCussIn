@@ -8,7 +8,7 @@
  * Controller of the howToCussInApp
  */
 angular.module('howToCussInApp')
-  .controller('SelectorController', function ($scope, Translation) {
+  .controller('SelectorController', function ($rootScope, $scope, Translation) {
     $scope.languages = [];
 
     Translation
@@ -16,5 +16,10 @@ angular.module('howToCussInApp')
       .then(function(response) {
         $scope.languages = Object.keys(response.data);
         $scope.currentLanguage = $scope.languages[0];
+        $scope.update();
       });
+
+    $scope.update = function() {
+      $rootScope.$broadcast('languageUpdated', $scope.currentLanguage);
+    };
   });
