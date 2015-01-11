@@ -15,5 +15,6 @@ angular.module('howToCussInApp')
       .get()
       .then(function(response) {
         $scope.languages = Object.keys(response.data);
+        $scope.currentLanguage = $scope.languages[0];
       });
   });

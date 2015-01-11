@@ -33,7 +33,8 @@
     <div class="container-fluid">
 
       <div id="selector-container" class="row" ng-controller="SelectorController">
-
+        Let's cuss in
+        <select id="languageSelector" ng-model="currentLanguage" ng-options="language as language | capitalize for language in languages"></select>
       </div>
 
       <div id="translation-container" class="row" ng-controller="TranslationController">
@@ -79,6 +80,7 @@
         <script src="scripts/controllers/selector.js"></script>
         <script src="scripts/controllers/translation.js"></script>
         <script src="scripts/services/translation.js"></script>
+        <script src="scripts/filters/capitalize.js"></script>
         <!-- endbuild -->
 </body>
 </html>
