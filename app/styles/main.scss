@@ -24,8 +24,21 @@ body {
 }
 
 .translation {
+  padding: 10px 0;
   font: {
     size: 2em;
   }
   text-align: center;
+}
+
+#warning-container {
+  margin-top: 20px;
+  font: {
+    size: 2em;
+  }
+  text-align: center;
+
+  a {
+    color: #bfbfbf;
+  }
 }
