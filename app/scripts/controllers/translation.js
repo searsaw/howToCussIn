@@ -2,7 +2,8 @@
 
 angular.module('howToCussInApp')
   .controller('TranslationController', function($scope, Translation) {
-    $scope.languageData = [];
+    $scope.languageData = {};
+    $scope.currentLanguage = 'english';
 
     Translation
       .get()

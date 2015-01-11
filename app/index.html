@@ -38,7 +38,21 @@
       </div>
 
       <div id="translation-container" class="row" ng-controller="TranslationController">
+        <div class="col-xs-12 col-sm-6">
+          <p>Shit: {{ languageData[currentLanguage]['shit'] }}</p>
+          <p>Piss: {{ languageData[currentLanguage]['piss'] }}</p>
+          <p>Fuck: {{ languageData[currentLanguage]['fuck'] }}</p>
+          <p>Cunt: {{ languageData[currentLanguage]['cunt'] }}</p>
+          <p>Cocksucker: {{ languageData[currentLanguage]['cocksucker'] }}</p>
+        </div>
 
+        <div class="col-xs-12 col-sm-6">
+          <p>Motherfucker: {{ languageData[currentLanguage]['motherfucker'] }}</p>
+          <p>Tits: {{ languageData[currentLanguage]['tits'] }}</p>
+          <p>Fart: {{ languageData[currentLanguage]['fart'] }}</p>
+          <p>Turd: {{ languageData[currentLanguage]['turd'] }}</p>
+          <p>Twat: {{ languageData[currentLanguage]['twat'] }}</p>
+        </div>
       </div>
 
       <div id="warning-container" class="row"></div>
@@ -75,12 +89,12 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/selector.js"></script>
-        <script src="scripts/controllers/translation.js"></script>
-        <script src="scripts/services/translation.js"></script>
-        <script src="scripts/filters/capitalize.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/selector.js"></script>
+    <script src="scripts/controllers/translation.js"></script>
+    <script src="scripts/services/translation.js"></script>
+    <script src="scripts/filters/capitalize.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
