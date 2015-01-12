@@ -9,9 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('howToCussInApp', [
-    'ngAnimate',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize'
-  ]);
+  .module('howToCussInApp', ['ngRoute'])
+  .config(function($locationProvider, $routeProvider) {
+    $locationProvider.html5Mode(true);
+  });
